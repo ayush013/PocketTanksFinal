@@ -1,0 +1,123 @@
+canvas
+{
+	border-radius: 25px;
+    background-image: url("./Graphics/BG1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#consolearea{
+  width:90%;
+  height:10%;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#op1 {
+	float:left;
+}
+
+#op2 {
+	float:right;
+}
+
+#angle1, #angle2 {
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 15px;
+    font-size: 20px;
+    background-image: url('./Graphics/angle.png');
+    background-position: 5px 7px;
+    background-repeat: no-repeat;
+    padding: 12px 1px 12px 40px;
+    width: 100px;
+}
+
+#move1, #move2 {
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 15px;
+    font-size: 20px;
+    background-image: url('./Graphics/move.png');
+    background-position: 5px 7px;
+    background-repeat: no-repeat;
+    padding: 12px 5px 12px 40px;
+    width: 100px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #ffd700;
+  border-radius: 1px;
+  border: 1px solid #010101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+#moveleft1 {
+  border-radius: 20px 0px 0px 20px;
+  background: #1ca949;
+}
+
+#moveright1 {
+  border-radius: 0px 20px 20px 0px;
+  background: #1ca949;
+}
+
+#play1 {
+  background: #1ca949;
+}
+
+#moveleft2 {
+  border-radius: 20px 0px 0px 20px;
+  background: #ff1a33;
+}
+
+#moveright2 {
+  border-radius: 0px 20px 20px 0px;
+  background: #ff1a33;
+}
+
+#play2 {
+  background: #ff1a33;
+}
+
+input[type=submit] {
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#scoreboard {
+color: white;
+font-size: 16px;
+font-family: sans-serif;
+}
+
+#p1score, #p2score  {
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    width: 50px;
+}
+
+fieldset {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}

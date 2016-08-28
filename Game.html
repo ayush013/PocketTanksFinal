@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body onload="myfunction()" align="center" background="./Graphics/back.png" >
+
+<audio autoplay>
+  <source src="./Music/ingame.mp3" type="audio/mp3">
+</audio>
+
+
+
+<script src="main.js"></script>
+
+<div id="consolearea">
+
+<div id="op1">
+<input type="number" min="0" max="90" value="0"  id="angle1" ></input>
+
+<input type="range" min="0" max="20" id="velocity1"></input>
+
+<input type="number" min="-120" max="1300" value="0"  id="move1" onclick="movea(value)"></input>
+
+<input type="submit" id="play1" onclick="play1()" value="FIRE">
+</div>
+
+<div id="op2">
+
+<input type="submit" id="play2" onclick="play2()" value="FIRE">
+
+<input type="number" value="0" min="-120" max="1300" id="move2" onclick="moveb(value)" ></input>
+
+<input type="range" min="0" max="20" id="velocity2"></input>
+
+<input type="number" min="0" max="90" value="0" id="angle2" ></input>
+</div>
+
+<div id="scoreboard">
+<form>
+ <fieldset>
+  <legend>SCOREBOARD</legend>
+  PLAYER1: <input type="text" id="p1score" disabled> 
+  PLAYER2: <input type="text" id="p2score" disabled>
+ </fieldset>
+</form>
+</div>
+
+<span id="weapon"></span>
+
+</div>
+
+</body>
+</html>
